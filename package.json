@@ -1,0 +1,19 @@
+{
+  "name": "neuro-lab",
+  "version": "1.0.0",
+  "description": "official website for the neuro-lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dubem-Joy/Neuro-Lab.git"
+  },
+  "author": "Joy Iroegbu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dubem-Joy/Neuro-Lab/issues"
+  },
+  "homepage": "https://github.com/Dubem-Joy/Neuro-Lab#readme"
+}
