@@ -3,13 +3,12 @@
 
 /* #Root Variables */
 :root {
-  --color-primary: #052443;
-  --color-primary-variant: #094076;
-  --color-sucess: #1DEBFE;
-  --color-blue: #146BFD;
-  --color-gray: #CCCCCC;
-  --color-dark: #363949;
+  --color-blue: #B8BBD3;
+  --color-blue-variant: #003566;
+  --color-gold: #FFC300;
+  --color-gold-variant: #FFD60A;
   --color-background: #E7E7E7;
+  --color-white: #ffffff;
 
   --card-border-radius: 2rem;
   --borer-radius-1: 0.4rem;
@@ -86,4 +85,51 @@ h5 {
 
 p {
   color: var(--color-dark-variant);
+}
+
+
+/* #Landing page */
+.landing-page{
+  background: var(--color-blue);
+  padding: 2rem 4rem;
+  height: 80vh;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.landing-page .tab{
+
+}
+.landing-page .main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-page .main .copy h1{
+  font-size: 2.5rem;
+}
+.landing-page .main .copy h2{
+  font-size: 1.5rem;
+}
+.landing-page .main .image img{
+  height: 80vh;
+}
+
+/* #Summary page */
+.summarypage{
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.summarypage .left{
+  background: #A08585;
+  width: 100%;
+}
+.summarypage .middle{
+  background: #E3C6A6;
+}
+.summarypage .right{
+  background: #98BCC6;
 }

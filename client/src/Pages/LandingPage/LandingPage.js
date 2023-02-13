@@ -1,5 +1,8 @@
 import React from 'react';
-import './LandingPage.css'
+import './LandingPage.css';
+
+// #images
+import brain from '../../Components/images/brain.png'
 
 
 const LandingPage = () => {
@@ -15,8 +18,20 @@ const LandingPage = () => {
           <h3>About</h3>
         </div>
       </div>
-      <div className="loaders">
-        
+      <div className="main">
+        <div className="copy">
+          <h1>
+            the Brain 
+          </h1>
+          <h2>and</h2>
+          <h1>the Environment</h1>
+        </div>
+        <div className="image">
+          <img src={brain} alt="" srcset="" />
+        </div>
+      </div>
+      <div className="bottom">
+
       </div>
     </div>
   );
