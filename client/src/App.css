@@ -32,6 +32,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -58,25 +59,28 @@ img {
 }
 
 h1 {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.8rem;
 }
 
 h2 {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 0.87rem;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 
 h5 {
   font-size: 0.6rem;
+  font-weight: 400;
 }
 
 .text-muted {
@@ -89,47 +93,55 @@ p {
 
 
 /* #Landing page */
-.landing-page{
-  background: var(--color-blue);
-  padding: 2rem 4rem;
-  height: 80vh;
-  color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-.landing-page .tab{
 
+
+
+/* #Research */
+.publications{
+  background: var(--color-background);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 95% 5%;
 }
-.landing-page .main{
+.publications .scroll{
+  display: grid;
+  grid-template-rows: 12% 88%;
+}
+.publications .scroll .cards {
+  width: 200%;
+  height: 100%;
+  display: flex;
+  gap: 0.2rem;
+}
+.publications .scroll .cards img{
+  height: 100%;
+  cursor: pointer;
+}
+.publications .scroll .card{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.publications .scroll .card .item{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.publications .scroll .card img {
+  width: 80%;
+  height: auto;
+  cursor: pointer;
+}
+.publications .navs{
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 10px;
 }
-.landing-page .main .copy h1{
-  font-size: 2.5rem;
-}
-.landing-page .main .copy h2{
-  font-size: 1.5rem;
-}
-.landing-page .main .image img{
-  height: 80vh;
-}
-
-/* #Summary page */
-.summarypage{
-  width: 100vw;
-  height: 90vh;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-.summarypage .left{
-  background: #A08585;
-  width: 100%;
-}
-.summarypage .middle{
-  background: #E3C6A6;
-}
-.summarypage .right{
-  background: #98BCC6;
+.publications .navs .links, .display-options{
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
 }
