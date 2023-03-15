@@ -92,8 +92,16 @@ p {
 }
 
 
-/* #Landing page */
-
+/* #Homepage */
+.homepage nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homepage nav .links{
+  display: flex;
+  gap: 2rem;
+}
 
 
 /* #Research */
