@@ -25,6 +25,30 @@ const Research = () => {
                     <div className="item" id="item-five">
                         <img src={p5} alt="" />
                     </div>
+                    <div className="item" id='item-two'>
+                        <img src={p2} alt="" />
+                    </div>
+                    <div className="item" id='item-three'>
+                        <img src={p3} alt="" />
+                    </div>
+                    <div className="item" id='item-four'>
+                        <img src={p4} alt="" />
+                    </div>
+                    <div className="item" id="item-five">
+                        <img src={p5} alt="" />
+                    </div>
+                    <div className="item" id='item-two'>
+                        <img src={p2} alt="" />
+                    </div>
+                    <div className="item" id='item-three'>
+                        <img src={p3} alt="" />
+                    </div>
+                    <div className="item" id='item-four'>
+                        <img src={p4} alt="" />
+                    </div>
+                    <div className="item" id="item-five">
+                        <img src={p5} alt="" />
+                    </div>
                 </div>
                 <div className="card">
                     <div className="item" id='item-one'>
@@ -36,7 +60,9 @@ const Research = () => {
                     <div className="item" id="item-five"></div>
                 </div>
             </div>
-            <div className="navs">
+
+            <nav className="navs">
+
                 <div className="links">
                     <h4><Link to='/'>HOME</Link></h4>
                     <h4><Link to='/project'>PROJECTS</Link></h4>
@@ -45,7 +71,8 @@ const Research = () => {
                     <h4>OVERVIEW</h4>
                     <h4>SELECTED</h4>
                 </div>
-            </div>
+            </nav>
+
         </div>
     );
 };
